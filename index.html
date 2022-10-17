@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Survey Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+</head>
+
+<body>
+  <div id="container">
+
+      <header class="hero">
+        <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="frreCodeCamp Logo">
+        <h2>Your opinion matters!</h2>
+        <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        
+        <div class="social-icons">
+        <a href="https://www.facebook.com/freecodecamp/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/freecodecamp/">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/freecodecamp">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/school/free-code-camp/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/freecodecamp">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+        <img src="survey.png"/>
+
+        <div class="footer">
+          <p>freeCodeCamp Certification Project</p>
+          <p>Copyright Juniela Bautista 2022. All Rights Reserved.</p>
+        </div>
+        
+      </header>
+
+      <main class="survey">
+        <h1 id="title">Survey Form</h1>
+        <hr class="divider">
+        <form id="survey-form">
+          <label for="name" id="name-label" class="emphasize">Name
+          <input type="text" id="name" placeholder="Enter your name" required>
+          </label>
+          <label for="email" id="email-label" class="emphasize">Email
+          <input type="email" id="email" placeholder="Enter your email" required>
+          </label>
+          <label for="number" id="number-label" class="emphasize">Age (optional)
+          <input type="number" id="number" min="10" max="50" placeholder="Your Age">
+          </label>
+          
+          <fieldset>
+            <label for="dropdown" class="emphasize">Which option best describes your current role?
+            <select id="dropdown">
+              <option value="">Select an option</option> 
+              <option value="1">Student</option>
+              <option value="2">Employee</option>
+              <option value="3">Prefer not to say</option>
+              <option value="4">Others</option>
+            </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="recommend" class="emphasize">Would you recommend freeCodeCamp to a friend?  </label>
+              <label for="recommend">
+              <input type="radio" id="recommend" name="yes-or-no" value="Definitely" checked>
+              Definitely
+            </label>
+            <label for="recommend">
+              <input type="radio" id="recommend" name="yes-or-no" value="Maybe">
+              Maybe
+            </label>
+            <label for="recommend">
+              <input type="radio" id="recommend" name="yes-or-no" value="Not sure">
+              Not sure
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="dropdown" class="emphasize">What is your favorite feature of freeCodeCamp?
+            <select id="dropdown">
+              <option value="">Select an option</option> 
+              <option value="1">Challenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Open Source</option>
+            </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label for="feature" class="emphasize">What would you like to see improved? (Check all that apply)</label>
+              <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Front-End Projects" checked>
+              Front-End Projects
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Back-End Projects">
+              Back-End Projects
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Data Visualization">
+              Data Visualization
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Challenges">
+              Challenges
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Open Source Community">
+              Open Source Community
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Gitter Help Rooms">
+              Gitter Help Rooms
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Videos">
+              Videos
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="City Meetups">
+              City Meetups
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Wiki">
+              Wiki
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Forum">
+              Forum
+            </label>
+            <label for="feature">
+              <input type="checkbox" id="feature" name="features" value="Additional Sources">
+              Additional Sources
+            </label>
+          </fieldset>
+
+          <label for="comment" class="emphasize">Any comments or suggestions?</label>
+          <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+          
+          <button id="submit">Submit</button>
+
+        </form>
+      </main>
+    </div>
+</body>
+
+</html>
